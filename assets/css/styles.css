@@ -482,8 +482,8 @@ body.light-theme {
 
 .skills__content {
   background-color: var(--container-color);
-  padding: 1.5rem;
-  border-radius: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
 }
 
 .skills__title {
