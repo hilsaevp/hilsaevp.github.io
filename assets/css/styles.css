@@ -328,6 +328,7 @@ body.light-theme {
 
 .home__img {
   width: 160px;
+  justify-self: center;
 }
 
 .home__handle {
