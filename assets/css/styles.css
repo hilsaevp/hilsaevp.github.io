@@ -733,6 +733,7 @@ body.light-theme {
   row-gap: 3rem;
   padding-bottom: 3rem;
   
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
