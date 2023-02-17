@@ -732,6 +732,7 @@ body.light-theme {
 .contact__container {
   row-gap: 3rem;
   padding-bottom: 3rem;
+  position: relative; /* does this center the containers? */
 }
 
 .contact__title {
@@ -790,6 +791,8 @@ body.light-theme {
   transition: .4s;
 }
 
+/*--=========== FORM HIDE
+
 .contact__form-div {
   position: relative;
   margin-bottom: 2rem;
@@ -828,6 +831,9 @@ body.light-theme {
 .contact__form-area textarea {
   resize: none;
 }
+
+END FORM ====================*/
+
 
 /*=============== FOOTER ===============*/
 .footer {
