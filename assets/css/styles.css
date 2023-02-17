@@ -730,7 +730,7 @@ body.light-theme {
 
 /*=============== CONTACT ===============*/
 .contact__container {
-  row-gap: 3rem;
+  column-gap: 3rem; /* does this center the cards? */
   padding-bottom: 3rem;
 }
 
@@ -750,7 +750,6 @@ body.light-theme {
   padding: 1rem;
   border-radius: .75rem;
   text-align: center;
-  position: relative; /* does this center the containers? */
 }
 
 .contact__card-icon {
