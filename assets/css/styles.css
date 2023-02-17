@@ -338,9 +338,9 @@ body.light-theme {
               hsla(var(--first-hue), var(--sat), var(--lig), 1), 
               hsla(var(--first-hue), var(--sat), var(--lig), .2)
             );
-  border-radius: 10rem 10rem 1rem 1rem;
+  border-radius: 20rem 20rem 2rem 2rem;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   overflow: hidden;
 }
@@ -730,7 +730,7 @@ body.light-theme {
 
 /*=============== CONTACT ===============*/
 .contact__container {
-  column-gap: 3rem; /* does this center the cards? */
+  row-gap: 3rem;
   padding-bottom: 3rem;
 }
 
