@@ -732,7 +732,6 @@ body.light-theme {
 .contact__container {
   row-gap: 3rem;
   padding-bottom: 3rem;
-  position: relative; /* does this center the containers? */
 }
 
 .contact__title {
@@ -751,6 +750,7 @@ body.light-theme {
   padding: 1rem;
   border-radius: .75rem;
   text-align: center;
+  position: relative; /* does this center the containers? */
 }
 
 .contact__card-icon {
