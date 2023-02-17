@@ -338,9 +338,9 @@ body.light-theme {
               hsla(var(--first-hue), var(--sat), var(--lig), 1), 
               hsla(var(--first-hue), var(--sat), var(--lig), .2)
             );
-  border-radius: 10rem 10rem 1rem 1rem;
+  border-radius: 20rem 20rem 3rem 3rem;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   overflow: hidden;
 }
@@ -695,6 +695,77 @@ body.light-theme {
   color: var(--body-color);
 }
 
+.work__modal{
+  position: fixed;
+  inset: 0;
+  background-color: hsla(var(--second-hue), 28%, 16%, .7);
+  padding: 2rem 1rem;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: .4s;
+  z-index: var(--z-modal);
+}
+
+.work__modal-content{
+  position: relative;
+  background-color: var(--body-color);
+  padding: 4.5rem 1.5rem 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.work__modal-title,
+.work__modal-description{
+  text-align: center;
+}
+
+.work__modal-title{
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+.work__modal-description{
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
+.work__modal-list{
+  display: grid;
+  row-gap: .75rem;
+}
+
+.work__modal-item{
+  display: flex;
+  align-items: flex-start;
+  column-gap: .5rem;
+}
+
+.work__modal-icon{
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+
+.work__modal-info{
+  font-size: var(--small-font-size);
+}
+
+.work__modal-close{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer
+  ;
+}
+
+/*Work Active modal*/
+.work-active-modal {
+  opacity: 1;
+  visibility: visible;
+}
 /*=============== TESTIMONIAL ===============*/
 .testimonial__card {
   background-color: var(--container-color);
@@ -730,8 +801,13 @@ body.light-theme {
 
 /*=============== CONTACT ===============*/
 .contact__container {
-  column-gap: 3rem; /* does this center the cards? */
+  row-gap: 3rem;
   padding-bottom: 3rem;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 .contact__title {
@@ -790,8 +866,6 @@ body.light-theme {
   transition: .4s;
 }
 
-/*--=========== FORM HIDE
-
 .contact__form-div {
   position: relative;
   margin-bottom: 2rem;
@@ -831,16 +905,13 @@ body.light-theme {
   resize: none;
 }
 
-END FORM ====================*/
-
-
 /*=============== FOOTER ===============*/
 .footer {
   background-color: var(--first-color);
 }
 
 .footer__container {
-  padding: 2rem 0 6rem;
+  padding: 2rem 0 2rem;
 }
 
 .footer__title, 
