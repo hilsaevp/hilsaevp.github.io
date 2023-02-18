@@ -28,7 +28,3 @@
     </a>
 </div>
 </div>
-
-# blog posts
-<!-- BLOG-POST-LIST: START -->
-<!-- BLOG-POST-LIST: END -->
